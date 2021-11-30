@@ -636,6 +636,9 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   width: 528px;
   height: 581px;
@@ -670,7 +673,20 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* .hero-contact-form {
-  display: flex;
-  flex-direction: ;
-} */
+.form-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+
+  color: var(--secondary-text-color);
+}
+
+.hero-contact-form label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
