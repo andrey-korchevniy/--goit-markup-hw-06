@@ -334,7 +334,7 @@
   </main>
 
 <!-- Футер сайта -->
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="contacts">
       <p class="logo"><a class="link" href="./index.html"><span class="logo-web">Web</span><span
@@ -352,43 +352,59 @@
         </li>
       </ul>
     </div>
-    <div class="footer-sm">
-      <h3 class="footer-call">Присоединяйтесь</h3>
-      <ul class="social-media list">
-        <li>
-          <a class="sm-icon" href="/">
-            <svg>
-              <use href="./images/icons.svg#icon-insta"></use>
+    <div class="sm-and-form">
+      <div class="footer-sm">
+        <h3 class="footer-call">Присоединяйтесь</h3>
+        <ul class="social-media list">
+          <li>
+            <a class="sm-icon" href="/">
+              <svg>
+                <use href="./images/icons.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="sm-icon" href="/">
+              <svg>
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="sm-icon" href="/">
+              <svg>
+                <use href="./images/icons.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="sm-icon" href="/">
+              <svg>
+                <use href="./images/icons.svg#icon-linkdin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-form">
+        <label for="email-form">Подпишитесь на рассылку</label>
+        <div>
+          <input type="email" name="email" id="email-form" placeholder="Email" />
+          <button class="hero-button footer-plane" type="submit">
+            Подписаться
+            <svg class="icon-plane" width="24" height="24">
+              <use href="./images/icons.svg#icon-plane"></use>
             </svg>
-          </a>
-        </li>
-        <li>
-          <a class="sm-icon" href="/">
-            <svg>
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="sm-icon" href="/">
-            <svg>
-              <use href="./images/icons.svg#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="sm-icon" href="/">
-            <svg>
-              <use href="./images/icons.svg#icon-linkdin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+          </button>
+        </div>
+      </div>
+
     </div>
   </div>
 </footer>
 
-<!-- Модальное окно -->
+<!-- ---------------------- Модальное окно -------------------------- -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <div class="close-btn" data-modal-close>
@@ -419,17 +435,15 @@
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </div>
-          <div class="input-form input-comment">
-            <label for="">Комментарий</label>
-            <textarea type="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+          <div class="input-form">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
-          <div class="terms-check">
-            <input type="checkbox" name="terms" id="terms"/>
-            <label for="terms">Соглашаюсь с рассылкой и принимаю <a href="./">Условия договора</a></label>
-            <svg class="input-checkbox" width="16" height="16">
-              <use href="./images/icons.svg#icon-Vector"></use>
-            </svg>
-          </div>
+          <label class="terms">
+            <input class="terms-check visually-hidden" type="checkbox" name="terms"/>
+            <span class="icon-check"></span>
+            Соглашаюсь с рассылкой и принимаю <a href="./">Условия договора</a>
+          </label>
           <div class="form-btn">
             <button class="hero-button" type="submit">
               Отправить
